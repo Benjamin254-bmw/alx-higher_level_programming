@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from claculator_1 import add, sub, div, mul
+from claculator_1 import add, sub, mul, div
 
 a = 10
 b = 5
