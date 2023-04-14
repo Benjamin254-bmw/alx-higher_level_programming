@@ -9,4 +9,4 @@ class Square:
             size(int): private instance attribute
         """
 
-        self.__size = 
+        self.__size = size 
