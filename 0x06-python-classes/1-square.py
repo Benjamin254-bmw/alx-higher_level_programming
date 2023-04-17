@@ -4,9 +4,8 @@ class Square:
     """
 
     def __init__(self, size):
+        self.__sie = size
         """__init__ method initializes the instance
         arg:
             size(int): private instance attribute
         """
-
-        self.__size = size 
