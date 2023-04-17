@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-class Square:
-    """create a class named Square
-    """
 
+"""create a class square"""
+
+
+class Square:
     def __init__(self, size=0):
         """__init__ method initializes an instance
         Arg:
