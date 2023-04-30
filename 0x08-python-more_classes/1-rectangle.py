@@ -8,9 +8,10 @@ class Rectangle:
         """__init__ method initializes instance variables
         Args:
             __width: private instance attribute, width of rectangle
-            __height: private instance attribute, height of rectangle"""
+            __height: private instance attribute, height of rectangle
+        """
         self.width = width
-        self.height = height
+        self.eight = height
 
     @property
     def width(self):
