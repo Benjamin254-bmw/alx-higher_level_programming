@@ -47,7 +47,7 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    def hight(self, value):
+    def height(self, value):
         """@height setter decorates setter function height
         to assign private variable __height value
         Raise:
