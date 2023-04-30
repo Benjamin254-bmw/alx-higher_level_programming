@@ -18,7 +18,8 @@ class Rectangle:
         """@property decorates getter function width
         to access private variable width value
         Return:
-            return __width value"""
+            return __width value
+        """
         return self.__width
 
     @width.setter
@@ -27,7 +28,8 @@ class Rectangle:
         to assign private variable __width value
         Raise:
             TypeError: width must be an integer
-            ValueError: width must be >= 0"""
+            ValueError: width must be >= 0
+        """
         if type(value) is not int:
             raise TypeError('width must be an integer')
         elif value < 0:
@@ -40,7 +42,8 @@ class Rectangle:
         """@property decorates getter function height
         to access private variable height value
         Return:
-            return __height value"""
+            return __height value
+        """
         return self.__height
 
     @height.setter
