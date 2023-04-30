@@ -18,7 +18,7 @@ class Rectangle:
         to access private variable width value
         Return:
             return __width value"""
-        return self.__value
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -31,7 +31,7 @@ class Rectangle:
             raise TypeError('width must be an integer')
         if value < 0:
             raise ValueError('width must be >=0')
-        self.__value = value
+        self.__width = value
 
     @property
     def height(self):
@@ -39,7 +39,7 @@ class Rectangle:
         to access private variable height value
         Return:
             return __height value"""
-        return self.__value
+        return self.__height
 
     @height.setter
     """@height setter decorates setter function height
@@ -51,4 +51,4 @@ class Rectangle:
         raise TypeError('height must be an integer')
     if value < 0:
         raise ValueError('height mus be >=0')
-    self.__value = value
+    self.__height = value
