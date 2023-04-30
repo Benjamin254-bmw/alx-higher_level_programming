@@ -11,7 +11,7 @@ class Rectangle:
             __height: private instance attribute, height of rectangle
         """
         self.width = width
-        self.eight = height
+        self.height = height
 
     @property
     def width(self):
