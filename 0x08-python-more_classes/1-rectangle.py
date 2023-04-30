@@ -42,14 +42,15 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    """@height setter decorates setter function height
-    to assign private variable __height value
-    Raise:
-        TypeError: height must be an integer
-        ValueError: height must be >=0
-    """
-    if type value is not int:
-        raise TypeError('height must be an integer')
-    if value < 0:
-        raise ValueError('height mus be >=0')
-    self.__height = value
+    def hight(self, value):
+        """@height setter decorates setter function height
+        to assign private variable __height value
+        Raise:
+            TypeError: height must be an integer
+            ValueError: height must be >=0
+        """
+        if type value is not int:
+            raise TypeError('height must be an integer')
+        if value < 0:
+            raise ValueError('height mus be >=0')
+        self.__height = value
