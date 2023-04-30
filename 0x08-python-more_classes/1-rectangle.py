@@ -46,7 +46,8 @@ class Rectangle:
     to assign private variable __height value
     Raise:
         TypeError: height must be an integer
-        ValueError: height must be >=0"""
+        ValueError: height must be >=0
+    """
     if type value is not int:
         raise TypeError('height must be an integer')
     if value < 0:
