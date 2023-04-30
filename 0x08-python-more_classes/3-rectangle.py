@@ -64,13 +64,16 @@ class Rectangle:
         Return:
             return the rectangle area
         """
-        return self.width*self.height
+        return self.__width*self.__height
 
     def perimeter(self):
         """public method perimeter() calculates the perimeter of the rectangle
         Return:
             return the rectangle perimeter
         """
-        if Rectangle.width or Rectangle.height == 0:
-            perimeter = 0
-        perimeter = ((Rectangle.width*2) + (Rectangle.height*2))
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        else:
+            return 2 * (self.__width + self.__height)
+
+
