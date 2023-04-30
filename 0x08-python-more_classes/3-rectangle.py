@@ -60,9 +60,17 @@ class Rectangle:
             self.__height = value
 
     def area(self):
-        return area = width*height
+        """public method area() calculates the area of the rectangle
+        Return:
+            return the rectangle area
+        """
+        return self.width*self.height
 
     def perimeter(self):
-        if width or height == 0:
+        """public method perimeter() calculates the perimeter of the rectangle
+        Return:
+            return the rectangle perimeter
+        """
+        if Rectangle.width or Rectangle.height == 0:
             perimeter = 0
-        perimeter = ((width*2) + (height*2))
+        perimeter = ((Rectangle.width*2) + (Rectangle.height*2))
