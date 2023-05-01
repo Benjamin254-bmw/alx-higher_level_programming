@@ -83,16 +83,16 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
             return ""
-        rect = ""
+        draw = ""
         for row in range(self.__height):
             for col in range(self.__width):
                 try:
-                    rect += str(self.print_symbol)
+                    draw += str(self.print_symbol)
                 except Exception:
-                    rect += type(self.print_symbol)
+                    draw += type(self.print_symbol)
             if row < self.__height -1:
-                rect += '\n'
-        return (rect)
+                draw += '\n'
+        return (draw)
 
     def __del__(self):
         """method __del__ prints a message when an instance of Rectangle is deleted
