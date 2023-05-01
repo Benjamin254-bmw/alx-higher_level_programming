@@ -108,5 +108,7 @@ class Rectangle:
             raise TypeError("rect_1 must be an instance of rectangle")
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must br an instance of rectangle")
-        if (rect_1.area() == rect_2.area()):
+        if (rect_1.area() >= rect_2.area()):
             return rect_1
+        else:
+            return rect_2
