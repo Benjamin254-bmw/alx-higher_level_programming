@@ -1,4 +1,4 @@
 #!/usr/bin/node
-function add (a, b){
+exports.add = function add (a, b){
 return a+b;
 }
