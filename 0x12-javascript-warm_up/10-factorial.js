@@ -1,5 +1,4 @@
 #!/usr/bin/node
-let a = parseInt(a);
 
 function factorials (a){
 if(isNaN(a)){
