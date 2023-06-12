@@ -1,7 +1,7 @@
 #!/usr/bin/node
-let num = process.argv[2];
-while(parseInt(num)){
-console.log(num * "C is fun");
+let num = parseInt(process.argv[2]);
+while(i=0; i<num.length; i++){
+console.log(num[i] * "C is fun");
 }else {
 console.log("Missing number of occurrences");
 }
