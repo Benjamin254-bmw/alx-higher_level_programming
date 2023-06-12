@@ -5,8 +5,10 @@ console.log(Missing size);
 } else {
 for (i=0; i<num; i++){
 console.log("X");
-for(x=0; x<i; x++){
-console.log("X");
+let s='';
+for(x=0; x<num; x++){
+s+="X";
 }
+console.log("X");
 }
 }
