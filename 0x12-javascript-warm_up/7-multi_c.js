@@ -7,5 +7,5 @@ if (num === undefined || isNaN(num)) {
   let i = 0;
   for (i = 0; i < num; i++) {
     console.log('C is fun');
-}
+  }
 }
