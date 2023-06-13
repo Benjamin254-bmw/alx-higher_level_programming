@@ -5,4 +5,4 @@ if (process.argv.length <= 3) {
   const arry = process.argv.slice(2).map(Number);
   const two = arry.sort(function(a, b){return b - a;})[1];
   console.log(two);
-}
+};
