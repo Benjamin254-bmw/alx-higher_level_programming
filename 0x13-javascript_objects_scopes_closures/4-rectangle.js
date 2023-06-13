@@ -9,8 +9,9 @@ class Rectangle {
   }
   print() {
     let rows, columns;
-    if (rows = 0; rows < this.width; rows++) {
-      if (columns = 0; columns < this.height; columns++) {
+    for (rows = 0; rows < this.width; rows++) {
+      let str = '';
+      for (columns = 0; columns < this.height; columns++) {
         str += 'X';
       }
       console.log(str);
@@ -22,8 +23,8 @@ class Rectangle {
     this.height = temp;
   }
   double() {
-    this.width *=2;
-    this.height *=2;
+    this.width *= 2;
+    this.height *= 2;
   }
 }
 
