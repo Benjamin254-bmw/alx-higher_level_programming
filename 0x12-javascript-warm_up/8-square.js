@@ -8,4 +8,4 @@ console.log('Missing size');
     console.log('X'.repeat(x));
     i++;
   }
-}
+};
