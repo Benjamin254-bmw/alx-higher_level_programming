@@ -10,9 +10,9 @@ class Rectangle {
 
   print () {
     let rows, columns;
-    for (rows = 0; rows < this.width; rows++) {
+    for (rows = 0; rows < this.height; rows++) {
       let str = '';
-      for (columns = 0; columns < this.height; columns++) {
+      for (columns = 0; columns < this.width; columns++) {
         str += 'X';
       }
       console.log(str);
