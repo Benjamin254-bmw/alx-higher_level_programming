@@ -5,7 +5,7 @@ the script should take 3 arguements:
     mysql username, mysql password and database name
 """
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     import sys
     import MySQLdb
 
