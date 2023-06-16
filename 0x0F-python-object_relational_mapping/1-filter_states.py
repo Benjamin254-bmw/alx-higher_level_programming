@@ -8,7 +8,7 @@ if __name__ == '__main__':
     import sys
     import MySQLdb
 
-    if (sys.argv) > 3:
+    if len(sys.argv) > 3:
         conn = MySQLdb.connect(
                 host="localhost",
                 port=3306,
@@ -21,7 +21,7 @@ if __name__ == '__main__':
         cur.execute("""SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC""")
         query_rows = cur.fetchall()
         for row in query_rows:
-            if row[1][0] = 'N':
+            if row[1][0] == 'N':
                 print(row)
         cur.close()
         conn.close()
