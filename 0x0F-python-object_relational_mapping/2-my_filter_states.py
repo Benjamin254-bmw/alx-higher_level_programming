@@ -6,23 +6,19 @@ script should take 4 arguments:
     mysql username, mysql password, database name and state name searched
 """
 
-if __name__ == '__main__':
-    import sys
-    import MySQLdb
-
-    conn = MySQLdb.connect(
+if __name__ == "__main__":
+    db = MySQLdb.connect(
             host="localhost",
-            port="3306",
             user=sys.argv[1],
             passwd=sys.argv[2],
             db=sys.argv[3],
-            charset="utf-8"
-    )
-    cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'".format(sys.argv[4]))
-    query_rows = cur.fetchall()
-    for row in query_rows:
-        if row[1] == sys.argv[4]:
-            print(row)
+            port=3306
+        )
+    cur = db.cursor()
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'"
+                .format(sys.argv[4]))
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
     cur.close()
-    conn.close()
+    db.close()
