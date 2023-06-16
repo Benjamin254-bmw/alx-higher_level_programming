@@ -7,7 +7,8 @@ class Rectangle {
       this.height = h;
     }
   }
-  print() {
+
+  print () {
     let rows, columns;
     for (rows = 0; rows < this.height; rows++) {
       let str = '';
