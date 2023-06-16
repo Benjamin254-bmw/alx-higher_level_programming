@@ -7,7 +7,8 @@ class Rectangle {
       this.height = h;
     }
   }
-  print() {
+
+  print () {
     let rows, columns;
     for (rows = 0; rows < this.width; rows++) {
       let str = '';
@@ -17,12 +18,14 @@ class Rectangle {
       console.log(str);
     }
   }
-  rotate() {
-    let temp = this.width;
+
+  rotate () {
+    const temp = this.width;
     this.width = this.height;
     this.height = temp;
   }
-  double() {
+
+  double () {
     this.width *= 2;
     this.height *= 2;
   }
