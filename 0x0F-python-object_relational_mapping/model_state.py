@@ -7,14 +7,17 @@ State class:
     class attribute name that represents a column of a string with maximum 128 characters and can’t be null
 """
 
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 
-
-Base = declarative_base()
+mymetadata = MetaData()
+Base = declarative_base(metadata=mymetadata)
 
 
 class State(Base):
+    """
+    Class with id and name attributes of each state
+    """
     __tablename__ = 'states'
-    id = Column(Integer, nullable=False, unique=True, primary_key=True)
+    id = Column(Integer, unique=True, nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
