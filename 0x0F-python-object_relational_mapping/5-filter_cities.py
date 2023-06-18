@@ -18,8 +18,8 @@ if __name__ == '__main__':
             charset='utf8'
         )
 
-    cur=conn.cursor()
-    query="""SELECT name FROM cities WHERE state_id=(SELECT id FROM WHERE name = %s) ORDER BY id ASC""";
+    cur = conn.cursor()
+    query = """SELECT name FROM cities WHERE state_id=(SELECT id FROM WHERE name = %s) ORDER BY id ASC""";
     cur.execute(query, (sys.argv[4],))
     query_rows = cur.fetchall()
     
