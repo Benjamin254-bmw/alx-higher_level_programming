@@ -5,7 +5,7 @@
     mysql username, mysql password, database name and state name (SQL injection free!)
 """
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     import sys
     import MySQLdb
 
