@@ -10,19 +10,20 @@ if __name__ == '__main__':
     import MySQLdb
 
     conn = MySQLdb.connect(
-            host="localhost",
-            port=3306,
-            user=sys.arg[1],
-            passwd=sys.argv[2],
-            db=sys.argv[3],
-            charset='utf8'
-        )
-
+        host="localhost",
+        port=3306,
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        db=sys.argv[3],
+        charset="utf8"
+    )
     cur = conn.cursor()
-    query = """SELECT name FROM cities WHERE state_id=(SELECT id FROM WHERE name = %s) ORDER BY id ASC""";
+    query = """SELECT name FROM cities
+    WHERE state_id = (SELECT id FROM states WHERE name = %s)
+    ORDER BY id ASC"""
     cur.execute(query, (sys.argv[4],))
     query_rows = cur.fetchall()
-    
+
     query_list = []
     for row in query_rows:
         query_list.append(row[0])
