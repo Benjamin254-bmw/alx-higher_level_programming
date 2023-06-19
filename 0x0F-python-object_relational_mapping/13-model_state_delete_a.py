@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""script that deletes all State objects with a name containing the letter a from the database hbtn_0e_6_usa
-    Your script should take 3 arguments: 
+"""script that deletes all State objects with a name containing
+the letter a from the database hbtn_0e_6_usa
+    Your script should take 3 arguments:
     mysql username, mysql password and database name
 """
 if __name__ == "__main__":
