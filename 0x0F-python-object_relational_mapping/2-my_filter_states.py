@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script that takes in an argument and displays all values in the 
+"""Script that takes in an argument and displays all values in the
     states table of hbtn_0e_0_usa where name matches the argument
     script should take 4 arguments:
         mysql username, mysql password, database name and state name
