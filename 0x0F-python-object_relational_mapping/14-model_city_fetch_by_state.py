@@ -2,7 +2,8 @@
 """Python file similar to model_state.py named model_city.py
 that contains the class definition of a City.
     Prints all the City objects from the database
-    takes arguments: mysql-username, mysql-password, database-name
+    takes arguments: mysql-username, mysql-password,
+    database-name
 """
 
 if __name__ == "__main__":
