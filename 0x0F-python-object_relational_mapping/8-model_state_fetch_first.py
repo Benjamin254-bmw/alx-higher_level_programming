@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """script that prints the first State object from the database hbtn_0e_6_usa
-    Your script should take 3 arguments: 
+    Your script should take 3 arguments:
     mysql username, mysql password and database name
 """
 
