@@ -1,6 +1,7 @@
 	0x08. Python - More Classes and Objects
 
 Tasks handled in this directory are:
+
 0. Simple rectangle
 1. Real definition of a rectangle
 2. Area and Perimeter
