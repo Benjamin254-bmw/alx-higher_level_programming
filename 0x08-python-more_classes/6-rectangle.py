@@ -10,6 +10,7 @@ class Rectangle:
             width(int): width of the rectangle
             height(int): height of the rectangle
         """
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -32,7 +33,7 @@ class Rectangle:
     def height(self):
         """get height of rectangle"""
         return self.__height
-
+i
     @height.setter
     def height(self, value):
         """set height of rectangle"""
