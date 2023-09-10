@@ -3,6 +3,9 @@
 
 class Rectangle:
     """Rectangle class"""
+
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """Initializes a new Rectangle
 
@@ -10,6 +13,7 @@ class Rectangle:
             width(int): width of the rectangle
             height(int): height of the rectangle
         """
+        
         type(self).number_of_instances += 1
         self.width = width
         self.height = height
@@ -34,6 +38,7 @@ class Rectangle:
         """get height of rectangle"""
         return self.__height
 i
+
     @height.setter
     def height(self, value):
         """set height of rectangle"""
