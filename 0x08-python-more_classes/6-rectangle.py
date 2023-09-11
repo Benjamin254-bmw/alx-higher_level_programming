@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Initializes a rectangle """
+
 
 class Rectangle:
     """Represents a Rectangle class
@@ -11,20 +11,20 @@ class Rectangle:
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
-        """Initializes a new Rectangle
+        """__init__ method.
 
         Args:
             width(int): width of the rectangle
             height(int): height of the rectangle
         """
         
-        Rectangle.number_of_instances += 1
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
-        """get width of rectangle
+        """width: returns width
         Args:
             width (int): integer width
         Returns:
@@ -36,7 +36,7 @@ class Rectangle:
         return self.__width
 
     @width.setter
-    def width(self, value):
+    def width(self, width):
         """set width of rectangle"""
 
         if not isinstance(value, int):
@@ -47,7 +47,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """get height of rectangle
+        """height: returns height
         Args:
             height (int): integer height
         Returns:
@@ -60,7 +60,7 @@ class Rectangle:
 i
 
     @height.setter
-    def height(self, value):
+    def height(self, height):
         """set height of rectangle"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
