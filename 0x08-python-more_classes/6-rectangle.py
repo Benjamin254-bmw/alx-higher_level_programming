@@ -2,7 +2,7 @@
 """Initializes a rectangle """
 
 class Rectangle:
-    """Represents a Rectangle
+    """Represents a Rectangle class
     
     Attributes:
     number_of_instances (int): the number of Rectangle instances
@@ -102,4 +102,5 @@ i
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+
 
