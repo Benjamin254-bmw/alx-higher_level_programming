@@ -2,7 +2,11 @@
 """Initializes a rectangle """
 
 class Rectangle:
-    """Rectangle class"""
+    """Represents a Rectangle
+    
+    Attributes:
+    number_of_instances (int): the number of Rectangle instances
+    """
 
     number_of_instances = 0
 
