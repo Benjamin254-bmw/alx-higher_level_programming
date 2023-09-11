@@ -24,7 +24,15 @@ class Rectangle:
 
     @property
     def width(self):
-        """get width of rectangle"""
+        """get width of rectangle
+        Args:
+            width (int): integer width
+        Returns:
+            rectangle width
+        Raises:
+            TypeError: if width is not an integer
+            ValueError: if width is less than 0
+        """
         return self.__width
 
     @width.setter
@@ -39,7 +47,15 @@ class Rectangle:
 
     @property
     def height(self):
-        """get height of rectangle"""
+        """get height of rectangle
+        Args:
+            height (int): integer height
+        Returns:
+            rectagle height
+        Raises:
+            TypeError: if height is not an integer
+            ValueError: if height is less than 0
+        """
         return self.__height
 i
 
@@ -85,4 +101,5 @@ i
         """print a message for every deletion of a Rectangle"""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
 
