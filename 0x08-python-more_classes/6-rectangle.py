@@ -10,11 +10,10 @@ class Rectangle:
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
-        """__init__ method.
-
+       """__init__ method.
         Args:
-            width(int): width of the rectangle
-            height(int): height of the rectangle
+            width (int): integer width
+            height (int): integer height
         """
         
         self.width = width
@@ -50,7 +49,7 @@ class Rectangle:
         Args:
             height (int): integer height
         Returns:
-            rectagle height
+            rectangle height
         Raises:
             TypeError: if height is not an integer
             ValueError: if height is less than 0
@@ -78,8 +77,9 @@ i
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """return the printable representation of the rectangle
-        using the character '#' 
+        """String representation (#) of rectangle.
+        Returns:
+            string rep of rectangle
         """
         if self.__width == 0 or self.__height == 0:
             return ("")
