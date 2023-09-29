@@ -2,10 +2,9 @@
 
 
 class Rectangle:
-    """Represents a Rectangle class
-    
+     """Rectangle class.
     Attributes:
-    number_of_instances (int): the number of Rectangle instances
+        number_of_instances (int): number of rectangle instances
     """
 
     number_of_instances = 0
