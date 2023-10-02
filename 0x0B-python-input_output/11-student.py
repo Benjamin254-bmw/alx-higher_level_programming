@@ -7,6 +7,7 @@ class Student:
 
     def __init__(self, first_name, last_name, age):
         """Initialize a new Student.
+        
         Args:
             first_name (str): The first name of the student.
             last_name (str): The last name of the student.
@@ -34,11 +35,10 @@ class Student:
 
 
     def reload_from_json(self, json):
-    """Replace all attributes of the Student.
-
-    Args:
-        json (dict): The key/value pairs to replace attributes with.
-    """
+        """Replace all attributes of the Student.
+        Args:
+            json (dict): The key/value pairs to replace attributes with.
+        """
 
      for k, v in json.items():
          setattr(self, k, v)
