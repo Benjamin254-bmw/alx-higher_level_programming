@@ -6,6 +6,7 @@
 
  class Base:
      """Base model.
+     
      This Represents the "base" for all other classes in project 0x0C*.
 
      Private Class Attributes:
@@ -72,7 +73,7 @@
             **dictionary (dict): Key/value pairs of attributes to initialize.
             """
 
-            if dictionary and dictionary != {}:
+                if dictionary and dictionary != {}:
                 if cls.__name__ == "Rectangle":
                     new = cls(1, 1)
                 else:
