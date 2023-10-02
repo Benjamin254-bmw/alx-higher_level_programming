@@ -19,6 +19,7 @@ class Student:
 
     def to_json(self, attrs=None):
         """Get a dictionary representation of the Student.
+
         If attrs is a list of strings, represents only those attributes
         included in the list.
         
@@ -34,6 +35,7 @@ class Student:
 
     def reload_from_json(self, json):
     """Replace all attributes of the Student.
+
     Args:
         json (dict): The key/value pairs to replace attributes with.
     """
