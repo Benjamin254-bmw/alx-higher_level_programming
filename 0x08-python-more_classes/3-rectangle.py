@@ -55,7 +55,7 @@ class Rectangle:
 
     def __str__(self):
         """return the printable representation of the rectangle
-        using the character '#' 
+        using the character '#'
         """
         if self.__width == 0 or self.__height == 0:
             return ("")
@@ -63,8 +63,6 @@ class Rectangle:
         shape = []
         for i in range(self.__height):
             [shape.append('#') for k in range(self.__width)]
-            if i != self.__height -1:
+            if i != self.__height - 1:
                 shape.append("\n")
         return ("".join(shape))
-
-        
