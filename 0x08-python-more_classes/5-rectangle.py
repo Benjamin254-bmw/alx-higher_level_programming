@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Initializes a rectangle """
 
+
 class Rectangle:
     """Rectangle class"""
     def __init__(self, width=0, height=0):
@@ -54,7 +55,7 @@ class Rectangle:
 
     def __str__(self):
         """return the printable representation of the rectangle
-        using the character '#' 
+        using the character '#'
         """
         if self.__width == 0 or self.__height == 0:
             return ("")
@@ -62,7 +63,7 @@ class Rectangle:
         shape = []
         for i in range(self.__height):
             [shape.append('#') for k in range(self.__width)]
-            if i != self.__height -1:
+            if i != self.__height - 1:
                 shape.append("\n")
         return ("".join(shape))
 
@@ -70,7 +71,8 @@ class Rectangle:
         """return the string representation of the rectangle"""
         shape = "Rectangle(" + str(self.__width)
         shape += ", " + str(self.__heigth) + ")"
-        return(shape) 
+        return (shape)
     def __del__(self):
+
         """print a message for every deletion of a Rectangle"""
         print("Bye rectangle...")
