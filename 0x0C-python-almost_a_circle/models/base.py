@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """defines a base class model"""
 
+
 class Base:
     """base class that represents the base for all other classes.
     private Class attribute:
