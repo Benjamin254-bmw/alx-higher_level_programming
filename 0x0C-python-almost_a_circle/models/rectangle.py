@@ -21,26 +21,35 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        if type(value) != int:
-            raise TypeError("width must be an integer")
-        if value <= 0:
-            raise ValueError("width: must be > 0")
+        """private instance attribut setter"""
+        self.__width = value
+
+    @propery
+    def height(self):
+        """private instance attribute getter"""
+        return self.height
+
+    @height.setter
+    def height(self, value):
+        """private instance attribute setter"""
         self.__height = value
 
     @property
     def x(self):
-        """set or get the x coordinates of the rectangle"""
+        """private instance attribute getter"""
         return self.__x
 
     @x.setter
     def x(self, value):
+        """private instance attribute setter"""
         self.__x = value
 
     @property
     def y(self):
-        """set or get the y coordinates of the rectangle"""
+        """private instance attribute getter"""
         return self.__y
 
     @y.setter
     def y(self, value):
+        """private instance attribute setter"""
         self.__y = value
