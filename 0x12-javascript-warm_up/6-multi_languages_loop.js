@@ -5,5 +5,5 @@ const C = "C is fun\n", Python = "Python is cool\n", JavaScript = "JavaScript is
 const langs = [C, Python, JavaScript]
 
 for (line of langs) {
-    console.log(i)
+    console.log(line)
 }
