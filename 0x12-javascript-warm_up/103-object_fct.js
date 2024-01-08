@@ -7,9 +7,10 @@ const myObject = {
   };
   console.log(myObject);
   
-  function incr () {
-    myObject.value++;
+  myObject.value = function () {
+    this.value++;
   }
+  
   myObject.incr();
   console.log(myObject);
   myObject.incr();
