@@ -18,3 +18,5 @@ Tasks
 15. Call me Moby
 16. Add me maybe
 17. Increment object
+
+[![js-semistandard-style](https://raw.githubusercontent.com/standard/semistandard/master/badge.svg)](https://github.com/standard/semistandard)
