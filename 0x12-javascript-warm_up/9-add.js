@@ -7,5 +7,5 @@ const b = process.argv[3];
 function add( a, b) {
   console.log(a + b);
 }
-add(Number(a), Number(b));
 
+add(Number(a), Number(b));
