@@ -6,6 +6,6 @@ const Python = 'Python is cool';
 const JavaScript = 'JavaScript is amazing';
 const langs = [C, Python, JavaScript];
 
-for (line of langs) {
+for (const line of langs) {
   console.log(line);
 }
