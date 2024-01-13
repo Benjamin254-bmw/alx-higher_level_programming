@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """lists all cities from the database hbt_0e_4_usa"""
 import MySQLdb
 import sys
