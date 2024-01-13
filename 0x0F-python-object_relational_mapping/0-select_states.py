@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """lists all states from the database hbtn_oe_o_usa"""
 import MySQLdb
+import sys
 
 if __name__=="__main__":
     db = MySQLdb.connect(host="localhost", user=sy.argv[1], 
