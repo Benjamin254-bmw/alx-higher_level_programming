@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """takes a URL and an email address
-sends POST request to URL with email as a parameter
-displays the body of the response
+-sends POST request to URL with email as a parameter
+-displays the body of the response
 """
 import sys
 import urllib.request
