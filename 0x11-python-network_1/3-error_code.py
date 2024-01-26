@@ -1,7 +1,9 @@
-#!usr/bin/python3
+#!/usr/bin/python3
+
 """Script that:
--takes URL and sends a request to the URL
--displays the body of the response ( utf-8).
+- takes in a URL,
+- sends a request to the URL
+- displays the body of the response (decoded in utf-8).
 """
 
 if __name__ == "__main__":
