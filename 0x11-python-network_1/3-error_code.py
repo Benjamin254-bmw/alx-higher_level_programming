@@ -1,6 +1,6 @@
 #!usr/bin/python3
 """sends a request to the URL and
-displays the body of the response (decoded in utf-8).
+-displays the body of the response ( utf-8).
 """
 
 if __name__ == "__main__":
