@@ -4,7 +4,7 @@
 -displays the body of the response
 """
 import sys
-import urllib.request
+import requests
 
 if __name__ == '__main__':
     html = requests.post(sys.argv[1], data={'email': sys.argv[2]})
